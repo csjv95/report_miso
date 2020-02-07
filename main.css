@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/* 리스트 스타일 없애기 */
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* 숨기기 */
+.a11y-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+    clip-path: polygon(0 0, 0 0, 0 0);
+}
+/* header */
+header{
+    
+}
+.header__fix {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row ;
+}
+.logo a img {
+    width: 66px;
+    height: 22px;
+}
+.menu {
+    display: flex;
+}
+.menu>li:nth-child(4) {
+    flex-grow: 1;
+}
+.menu>li>ul {
+    display: none;
+}
